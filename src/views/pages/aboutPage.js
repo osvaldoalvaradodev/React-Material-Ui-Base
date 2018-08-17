@@ -15,7 +15,7 @@ class AboutPage extends Component {
 
         <Card >
         <CardContent>
-        <h3 className="header-title">Cabezera</h3>
+        <h3 className="header-title">Cabecera</h3>
         <Divider />
         <div>
         <p>Contendor de Ejemplo, el siguiente elemento (boton) cambia el estado de la aplicacion "isLoged" a false... utilizando reactcontext UI.</p>

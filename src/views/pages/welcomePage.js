@@ -18,7 +18,7 @@ class WelcomePage extends Component {
       return (
         <Card >
         <CardContent>
-        <h3>Cabezera</h3>
+        <h3>Cabecera</h3>
         <Divider />
         </CardContent>
         </Card>
