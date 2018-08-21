@@ -1,5 +1,9 @@
 import axios from 'axios';
 import GLOBAL from '../utils/globals';
+import {  toast } from 'react-toastify';
+
+
+
 export function funcion1(){
     console.log("Helper de Pruebas");
 }
@@ -45,4 +49,12 @@ export function getData(Url,Token){
       
       return error.response;
     });
+  }
+
+  export function okAlert(text){
+    toast.success(text);
+  }
+
+  export function errorAlert(text){
+    toast.error(text);
   }

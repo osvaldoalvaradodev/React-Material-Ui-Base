@@ -13,12 +13,15 @@ import FormControl from '@material-ui/core/FormControl';
 import AccountCircle from '@material-ui/icons/AccountCircle';
 import VpnKey from  '@material-ui/icons/VpnKey';
 import Input from '@material-ui/core/Input';
+import {okAlert} from './../utils/helpers';
+
 class Login extends Component {
     constructor(props) {
         super(props),
         this.state = {
             user : '',
-            password : ''
+            password : '',
+        
         }
     }
 
@@ -37,6 +40,7 @@ class Login extends Component {
             console.log("Inicio de sesion correcto!");
             console.log(res);
         });
+        okAlert("Inicio de sesion correcto!");
         this.props.handleLogin(true);
     }
 

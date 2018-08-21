@@ -2,8 +2,8 @@ import React,{Component } from 'react'
 import UserLogedScreen from './userLogedScreen'
 import Login from './login'
 import GLOBALS from './../utils/globals';
-
-
+import { ToastContainer} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 class MainView extends Component {
     constructor(props) {
         super(props);
@@ -24,6 +24,7 @@ class MainView extends Component {
         console.log("Seteando el Status en " + status)
         if(status){
             this.props.actions.login(true);
+        
           }else{
             this.props.actions.login(false);
           }
@@ -32,15 +33,17 @@ class MainView extends Component {
   
     if(this.props.state.IS_LOGED){
         return(
-      
+        <div>
+        <ToastContainer />
         <UserLogedScreen handleLogin={this.handleLogin}></UserLogedScreen>
-     
+        </div>
         )
     }else{
       return (
-    
+        <div>
+        <ToastContainer />
         <Login handleLogin={this.handleLogin}></Login>
-     
+        </div>
       )
    }
 }
