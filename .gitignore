@@ -6,8 +6,8 @@
 # testing
 /coverage
 
-# production
-/build
+# production publica produccion tmb
+# /build
 
 # misc
 .DS_Store

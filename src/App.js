@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
-
-
+//libreria para las rutas
 import { BrowserRouter } from 'react-router-dom'
+
+//elementos para CONTEXT UI
+import ContextContainer from './contextContainer'
 import { createStore } from './createStore'
 import { Provider } from './createConsumer'
-import MainView from './views/mainView';
-import ContextContainer from './contextContainer'
-
 
 class App extends Component {
   //estado inicial, define los STATE globales para la aplicacion
